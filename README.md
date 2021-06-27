@@ -63,6 +63,7 @@ Misclassified History posts contained technical words that were in a different c
 
 ## Best Predictors
 ![image](https://user-images.githubusercontent.com/49399188/123558072-022e8900-d7c7-11eb-93c5-f5aaf02e9a93.png)
+
 These were the top 10 best predictors for each subreddit for both the logistic regression and naive bayes. 
 We can see that the top words for science is more or less the same. The most interesting one is the word 'cause'. This is an unlikely word to appear but after some consideration, this makes sense. Science is described by the [Cambridge Dictionary](https://dictionary.cambridge.org/dictionary/english/science) as the careful study of the structure and behaviour of the physical world, especially by watching, measuring, and doing experiments, and the development of theories to describe the results of these activities. A large part of science includes the understanding of causal activities and thus, this is why the word pops up and is useful in our model. Another interesting thing is that we see 'difference' and 'different' appear as well. This links back to our logic that for science topics, relationships between certain phenomenon is a common question to ask and thus, these words being significant. However, when we look at the top words for history, there is a vast difference. To understand this, we have to look at the difference between the Naive Bayes and Logistic Regression models.
 
