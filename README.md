@@ -25,7 +25,7 @@ In total, we have approximately **1000 unique posts per subreddit**. We have ens
 
 ## Data Exploration and Cleaning
 
-IWe look to clean the data before passing it through our models. The things we will be focused on include:
+We look to clean the data before passing it through our models. The things we will be focused on include:
 * Removing hyperlinks
 * Removing HTML characters
 * Converting words to lowercase
@@ -41,16 +41,19 @@ We explore the following models, both with countvectorizer and TF-IDF vectorizer
 * Decision Trees
  
  These are the results:
+ 
  ![image](https://user-images.githubusercontent.com/49399188/123557893-0b6b2600-d7c6-11eb-9192-8871e1228f8f.png)
  
  We select the Logistic Regressoin, Multinomial Naive Bayes and K Nearest Neighbors for further examination (all with TF-IDF Vectorizer)
 
  This is a summary of our models:
+ 
  ![image](https://user-images.githubusercontent.com/49399188/123558006-977d4d80-d7c6-11eb-8481-27e324d88d55.png)
  
  We see that Naive Bayes performed the best on test data (lowest varaince) but KNN presented the lowest bias.
  
- We also look at the misclassications:
+ We also look at the misclassifications:
+ 
  ![image](https://user-images.githubusercontent.com/49399188/123558025-c1cf0b00-d7c6-11eb-8f02-c6dd8e091e00.png)
  We can see that both Naive Bayes and KNN more confidently predicted the classes with fatter tails in the chart. However, logistic regression did well in minimising the magnitude of misclassifcation.
 
